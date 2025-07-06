@@ -1,3 +1,9 @@
+import Context from "./context/Context";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <Context>
+      <div>hello</div>
+    </Context>
+  );
 }

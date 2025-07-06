@@ -1,7 +1,13 @@
-import React from "react";
+import React, { createContext, ReactNode } from "react";
 
-const Context = () => {
-  return <div>Context</div>;
+const MyContext = createContext();
+
+type UserProviderProps = {
+  children: ReactNode;
+};
+
+const Context = ({ children }: UserProviderProps) => {
+  return <MyContext.Provider>{children}</MyContext.Provider>;
 };
 
 export default Context;
