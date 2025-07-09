@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import Context from "./context/Context";
 
 const noto = Noto_Sans_JP({
   subsets: ["latin"],
@@ -18,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="jp">
-      <body className={noto.className}>{children}</body>
+      <body className={noto.className}>
+        <Context>{children}</Context>
+      </body>
     </html>
   );
 }

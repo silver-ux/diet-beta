@@ -1,9 +1,11 @@
-import Context from "./context/Context";
+import Header from "./components/Header";
+import Video from "./components/Video";
 
 export default function Home() {
   return (
-    <Context>
-      <div>hello</div>
-    </Context>
+    <>
+      <Header />
+      <Video />
+    </>
   );
 }
