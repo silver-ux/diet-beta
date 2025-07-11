@@ -7,6 +7,7 @@ type CustomTooltipProps = {
   }[];
   label?: string;
 };
+
 export const CustomTooltip = ({
   active,
   payload,
