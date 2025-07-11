@@ -54,7 +54,7 @@ const SignIn = () => {
       }
     };
     fetchUser();
-  }, []);
+  }, [router, user]);
   return (
     <div className=" h-screen w-screen px-[5%] flex items-center justify-center ">
       <div
